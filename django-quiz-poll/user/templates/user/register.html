@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register
+{% endblock title %}
+
+{% block content %}
+
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+        <input type="hidden" name="next" value="{{ next }}" />
+		<input class="btn btn-success" type="submit" value="Sign In" />
+	</form>
+	<p class="text-muted">Forget password? <a class="text-primary" href="{% url 'account:password_reset' %}"></a></p>
+
+{% endblock content%}

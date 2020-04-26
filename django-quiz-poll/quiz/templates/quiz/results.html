@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Result
+{% endblock title %}
+
+{% block content %}
+
+	<p>Your result in "{{ topic }}" quiz is: {{ points }}</p>
+	<a href="{% url 'quiz:topics' category.id %}" class="btn btn-success" role="button">Back to category</a>
+
+{% endblock content%}

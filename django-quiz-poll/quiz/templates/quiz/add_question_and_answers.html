@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block header %}	
+	New Question and Answers
+{% endblock header %}
+
+{% block content %}
+
+	What is the question you want to add:
+	<form action="." method="POST">
+		{% csrf_token %}
+		{{ form_question.as_p }}
+		Write answers and pick which is correct
+		<ul>
+			{% for form_answer in forms_answer %}
+				<li>
+					{{ form_answer }}
+					<input type="hidden" name="id-{{ forloop.counter0 }}" value="{{ forloop.counter0 }}" />
+					<br />
+					<br />
+				</li>
+			{% endfor %}
+		</ul>
+		<input class="btn btn-primary" type="submit" value="Add and write new question" />
+	</form>
+	<br />
+	<form action="{% url 'quiz:topics' topic.category.id %}">
+		<input class="btn btn-success" type="submit" value="Back to topic list" />
+	</form>
+
+
+{% endblock content%}

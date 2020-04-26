@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <title>Gibonus</title>
+  <meta name="description" content="Gibonus - workshop of musical instruments"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="name">
+      <h1 style="flaot: left">Gibonus - Workshop of Musical Instruments</h1>
+    </div>
+
+    <div class="menu">
+      <ol>
+		<li><a href="index_en.html">Main page</a></li>
+        <li><a href="produkty_en.html">Pan Flute</a>
+			<ul>
+				<li><a href="fp-student-en.html">Student</a></li>
+				<li><a href="fp-concert-en.html">Concert</a></li>
+				<li><a href="fp-solist-en.html">Solist</a></li>
+				<li><a href="fp-master-en.html">Master</a></li>
+			</ul>
+		</li>
+        <li><a href="sprzedaz_en.html">Sale</a></li>
+        <li><a href="wspolpraca_en.html">Cooperation</a></li>
+        <li><a href="kontakt_en.html">Contact</a></li>
+      </ol>
+    </div>
+
+    <div id="container">
+      <div id="left">
+		<div class="language">
+			<a href="index.html"><image src="images/polska.gif" width="50" height="30"></image></a>
+			<a href="index_en.html"><image src="images/anglia.jpg" width="50" height="30"></image></a>
+		</div>
+	    <a href="http://www.panflute.pl/" target="_blank"><image src="images/shop.jpg" height="500" width="140" /></a>
+	
+      </div>
+      <div id="main">
+	<center>
+		<h3>  Welcome to Marek Teśluk Pan Flute workshop
+		</h3>
+	</center>
+	<br /><br />
+	Since 1993 Marek Tesluk`s workshop has been making musical instruments: 
+	Pan-flutes, Panpipes, recorders and different wooden flutes, 
+	which have a very long history and on the basis of which modern instruments were developed. 
+	In our work we try to preserve the original, often 'raw' sounds of those instruments and at the same time we use 
+	modern knowledge to improve their design, measure and finishing. Most of our instruments are made from resonant 
+	types of wood which have been impregnated with natural substances so that there is no risk that they may be 
+	damaged through exposure to moisture. The electronic tuning 
+	and wide selection of ranges and keys of those instruments 
+	means that they can be used by professional musicians.
+	<br /><br />
+	<center><img src="images/orbis-instr.gif"></img></center>
+	<br />
+	Nowadays a trend can be observed to combine ethnic, classical and modern 
+	instruments by which the world of music is becoming richer and more diversified. 
+	We hope that our instruments will enable you to explore new possibilities in the area of musical expression.                 
+	Some of our instruments can be purchased from music shops whose list can be find on the dealers page. 
+	They can be also purchased online from our web sites. You can make purchases 
+	directly from our workshop in Bielsko-Biała, Poland, and use this opportunity to take a breath of fresh mountain air.
+	<br /><br/>
+	<center><img src="images/cz_tlo_ornament.jpg"></img></center>
+      </div>
+
+      <div id="right">
+	<div id="fb"><a href="https://www.facebook.com/marek.tesluk?fref=ts" class="socialclass" target="_blank"><i class="icon-facebook-squared"></i></a></div>
+	<div id="yt"><a href="https://www.youtube.com/user/panfun11" class="socialclass" target="_blank"><i class="icon-youtube-squared"></i></a></div>
+      </div>
+      <div style:"clear: both"></div>
+    </div>
+    
+	<div id="serwis">
+		<a href="http://www.fletnia-pana.pl/" target="_blank"><image src="images/baner1.gif" width="400" height="50"></image></a>
+	</div>
+	
+    <div id="footer">gibonus.com &copy; 2017 All Right Reserved 
+    </div>
+  </div>
+
+<script src="jquery-3.2.1.min.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+	stickyNav();
+	});
+	});
+
+</script>
+
+  
+</body>
+</html>

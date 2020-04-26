@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock title %}
+
+{% block content %}
+	<p>Welcome <span class="text-success">{{ request.user.username }}</span>,</p>
+	<p>now you can create your own 	survey  -----> <a href="{% url 'survey:categories' %}" class="btn btn-success" role="button">Here</a></p>
+
+{% endblock content%}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+	
+	New Question
+
+{% endblock title %}
+
+{% block content %}
+
+	What is the question you want to add:
+	<form action="." method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input class="btn btn-primary" type="submit" value="Add and write new question" />
+	</form>
+	<br />
+	<form action="{% url 'survey:topics' topic.category.id %}">
+		<input class="btn btn-success" type="submit" value="Back to topic list" />
+	</form>
+
+
+{% endblock content%}

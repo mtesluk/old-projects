@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ topic.topic_name }}
+{% endblock title %}
+
+{% block content %}
+
+	{% for question in topic.questions.all %}
+		<h3>{{ question.question }}</h3>
+		{% for answer in question.answers.all %}
+			<p>{{ answer.answer }}</p>
+		{% endfor %}
+		<br />
+	{% endfor %}
+
+{% endblock content%}

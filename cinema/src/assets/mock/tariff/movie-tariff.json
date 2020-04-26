@@ -1,0 +1,12 @@
+{
+    "adult": 
+    {
+        "movie_3d": 22,
+        "movie_2d": 20
+    },
+    "child": 
+    {
+        "movie_3d": 20,
+        "movie_2d": 18
+    } 
+}

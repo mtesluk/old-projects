@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Home
+{% endblock title %}
+
+{% block content %}
+	
+	<h4>Have you ever consider how easy can be gathering information from people through internet?</h4>
+	<p>The purpose of this page is to make survey and give this for community to fill it.</p>
+	<p>Just <a href="{% url 'account:register' %}">sign up</a> or <a href="{% url 'account:login' %}">sign in</a> and make your own survey and quizes to get some information!</p>
+	<br />
+	<p>
+		If you want to see survey, press ------->
+		<a href="{% url 'survey:categories' %}" class="btn btn-success" role="button">Survey</a>
+	</p>
+	<br />
+	<p>
+		If you want to see quizes, press ------->
+		<a href="{% url 'quiz:categories' %}" class="btn btn-success" role="button">Quiz</a>
+	</p>
+
+{% endblock content%}

@@ -1,0 +1,39 @@
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'survey/style.css' %}" />
+
+    <title>survey</title>
+
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="menu">
+        <div id="link-home">
+          <a href="{% url 'survey:index' %}">Home</a>
+        </div>
+        <div id="login">
+          Logowanie
+        </div>
+      </div>
+      <div id="box">
+        <div class="page-header">
+      		{% block header %}
+      		{% endblock header %}
+        </div>
+        <div id="content">
+  		    {% block content %}
+  		    {% endblock content %}
+        </div>
+      </div>
+    </div>
+      
+
+  </body>
+</html>

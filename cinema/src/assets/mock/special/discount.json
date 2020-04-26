@@ -1,0 +1,30 @@
+[
+    {
+        "event": "Christmas",
+        "for": "kids",
+        "date": "24.12.2018",
+        "discount": "15%",
+        "target": "popcorn"
+    },
+    {
+        "event": "Christmas",
+        "for": "kids",
+        "date": "25.12.2018",
+        "discount": "15%",
+        "target": "2d movies"
+    },
+    {
+        "event": "Christmas",
+        "for": "kids",
+        "date": "26.12.2018",
+        "discount": "10%",
+        "target": "small popcorn kit"
+    },
+    {
+        "event": "New Years Eve",
+        "for": "adults",
+        "date": "31.12.2018",
+        "discount": "25%",
+        "target": "movie and popcorn"
+    }
+]

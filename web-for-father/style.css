@@ -1,0 +1,191 @@
+body 
+{
+    background-color:#fff37b;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0 !important;
+}
+
+#wrapper
+{
+    width: 100%;
+}
+
+#name
+{
+    padding:10px;
+    margin-right:50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu
+{
+    text-align: center;
+    background-color: #e1ca40;
+	padding: 10px 0;
+	border-top: 1px solid #751b1b;
+	border-bottom: 1px solid #751b1b;
+	-moz-box-shadow:    2px 2px 2px 0px #000000;
+	-webkit-box-shadow: 2px 2px 2px 0px #000000;
+	box-shadow:         2px 2px 2px 0px #000000;
+}
+
+ol
+{
+    padding: 0;
+    margin:0;
+    list-style-type:none;
+    height: 35px;
+    font-size:20px;
+    line-height:200%;
+	display: inline-block;
+}
+
+a
+{
+	color:#000000;
+}
+
+ol a
+{
+    color:#000000;
+    text-decoration:none;
+    display:block;
+}
+
+ol > li
+{
+    float: left;
+    width: 150px;
+    height:40px;
+    border-right:1px dashed #000000;
+}
+
+ol > li:first-child
+{
+    border-left:1px dashed #000000;
+}
+
+ol a:hover
+{
+    color: #ffffff;
+}
+
+ol > li > ul
+{
+	list-style-type:none;
+	padding: 0;
+    margin:0;
+	display:none;
+	-moz-box-shadow:    3px 3px 2px 0px #000000;
+	-webkit-box-shadow: 3px 3px 2px 0px #000000;
+	box-shadow:         3px 3px 2px 0px #000000;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color: #ddaa20;
+	position: relative;
+	z-index:100;
+	border-top: 1px dashed #000000; 
+}
+
+.language
+{
+	float: left;
+    padding: 10px;
+    list-style-type:none;
+    min-height:30px;
+}
+
+#container
+{
+    clear: both;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height:400px;
+}
+
+#left
+{
+    float: left;
+    width: 140px;
+}
+
+#main
+{
+    width:760px;
+    padding:20px;
+    text-align: justify;
+    float: left;
+}
+
+#right
+{
+    float: left;
+    width: 140px;
+}
+
+#fb
+{
+    width: 125px;
+    height: 140px;
+    display:block;
+}
+
+#fb:hover
+{
+    background-color: #4668b3;
+    
+}
+
+#yt
+{
+    width: 125px;
+    height: 140px;
+    margin-top:20px;
+}
+
+#yt:hover
+{
+    background-color: #d94348;
+}
+
+#serwis
+{
+	padding:10px;
+    clear: both;
+    text-align: center;
+    background-color: #e3cd4f;
+	border-top: 1px solid #751b1b; 
+}
+
+#footer
+{
+    text-align: center;
+    background-color:#e1ca40;
+}
+
+a.socialclass
+{
+    text-decoration:none;
+    display:block;
+    color: #000000;
+    
+}
+
+.sticky
+{
+    width:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:100;
+}

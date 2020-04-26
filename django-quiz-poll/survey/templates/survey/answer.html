@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ topic.topic_name }}
+{% endblock title %}
+
+{% block content %}
+	<form action="" method="POST">
+		{% csrf_token %}
+		{% for question,form in zipper %}
+			<br />
+			<div class="form-group">
+				<label>{{ question }}</label>
+				{{ form.as_p }}
+				<input type="hidden" name="id-{{ forloop.counter0 }}" value="{{ question.id }}" />
+			</div>
+		{% endfor %}
+
+		<br />
+		<input class="btn btn-success" type="submit" value="Save" />
+	</form>
+	
+
+{% endblock content%}

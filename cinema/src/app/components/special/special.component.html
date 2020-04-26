@@ -1,0 +1,30 @@
+<div class="border-bottom">
+  <table class="table table-light col-10 mb-3" style="margin: auto;">
+    <thead>
+      <tr>
+        <th scope="col">Event</th>
+        <th scope="col">For</th>
+        <th scope="col">Date</th>
+        <th scope="col">Discount</th>
+        <th scope="col">Target</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let discount of (discounts|async);">
+        <td>{{ discount.event }}</td>
+        <td>{{ discount.for }}</td>
+        <td>{{ discount.date }}</td>
+        <td>{{ discount.discount }}</td>
+        <td>{{ discount.target }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="mt-3 mb-3 border-bottom">
+  <h3>For the film's connoisseurs</h3>
+  <p>
+    You can purchase special card for only 50$. With it you 
+    will be able to watch movies whenever you want!
+  </p>
+</div>

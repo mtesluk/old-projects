@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Your quizes
+{% endblock title %}
+
+{% block content %}
+
+	{% for quiz in quizes %}
+		<a href="{% url 'quiz:quiz_detail' quiz.id %}" class="btn btn-primary" role="button">{{ quiz }}</a>
+		<br />
+		<br />
+	{% endfor %}
+	<a href="{% url 'quiz:delete_quizes' %}" class="btn btn-danger" role="button">Remove</a>
+
+{% endblock content%}

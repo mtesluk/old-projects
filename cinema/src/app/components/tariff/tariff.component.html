@@ -1,0 +1,80 @@
+
+<table class="table table-light">
+  <thead>
+    <tr>
+      <th scope="col">Age</th>
+      <th scope="col">2D</th>
+      <th scope="col">3D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Adult</th>
+      <td>{{ (movie_prices | async)?.adult.movie_2d }}</td>
+      <td>{{ (movie_prices | async)?.adult.movie_3d }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Child</th>
+      <td>{{ (movie_prices | async)?.child.movie_2d }}</td>
+      <td>{{ (movie_prices | async)?.child.movie_3d }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">Snacks</th>
+        <th scope="col">Popcorn</th>
+        <th scope="col">Nachos</th>
+        <th scope="col">Pepsi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Small</th>
+        <td>{{ (snack_prices | async)?.small.popcorn }}</td>
+        <td>{{ (snack_prices | async)?.small.nachos }}</td>
+        <td>{{ (snack_prices | async)?.small.pepsi }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Medium</th>
+        <td>{{ (snack_prices | async)?.medium.popcorn }}</td>
+        <td>{{ (snack_prices | async)?.medium.nachos }}</td>
+        <td>{{ (snack_prices | async)?.medium.pepsi }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Large</th>
+        <td>{{ (snack_prices | async)?.large.popcorn }}</td>
+        <td>{{ (snack_prices | async)?.large.nachos }}</td>
+        <td>{{ (snack_prices | async)?.large.pepsi }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-light">
+      <thead>
+        <tr>
+          <th scope="col">Kit</th>
+          <th scope="col">Popcorn + Pepsi</th>
+          <th scope="col">Nachos + Pepsi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Small</th>
+          <td>{{ (kit_prices | async)?.small.popcorn_pepsi }}</td>
+          <td>{{ (kit_prices | async)?.small.nachos_pepsi }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Medium</th>
+          <td>{{ (kit_prices | async)?.medium.popcorn_pepsi }}</td>
+          <td>{{ (kit_prices | async)?.medium.nachos_pepsi }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Large</th>
+          <td>{{ (kit_prices | async)?.large.popcorn_pepsi }}</td>
+          <td>{{ (kit_prices | async)?.large.nachos_pepsi }}</td>
+        </tr>
+      </tbody>
+    </table>

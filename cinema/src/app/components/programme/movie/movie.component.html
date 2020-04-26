@@ -1,0 +1,14 @@
+<div class="row" *ngIf="movie">
+  <div class="col-md-4 border-right">
+    <div class="title">
+        <h5>{{ movie.en_movie_name }}</h5>
+        <p class="font-weight-light">{{ movie.en_movie_name }}</p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <span *ngFor="let time of movie.times" (click)="navigate_to_detail(time.time)" class="mr-2">
+      {{ time.time }}
+    </span>
+  </div>
+</div>
+

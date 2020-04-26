@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Answer
+{% endblock title %}
+
+{% block content %}
+
+	<p>Solve this test, only one answer is correct. Good luck!</p>
+	<form action="." method="POST">
+	{% csrf_token %}
+	{% for question in questions %}
+		{{ forloop.counter }}.&nbsp;&nbsp;{{ question }}
+		<br />
+		{% for answer in question.answers.all %}
+			<input type="checkbox" name="answer-{{ answer.id }}" value="{{ answer.is_good }}" id="{{ answer.id }}">
+			<label for="{{ answer.id }}">{{ answer}}</label>
+			<br />		
+		{% endfor %}	
+		<br />
+	{% endfor %}
+	<br />
+	<input class="btn btn-success" type="submit" value="Check" />
+	</form>
+
+{% endblock content%}

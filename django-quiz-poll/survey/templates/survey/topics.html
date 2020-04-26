@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ category }} Topics
+{% endblock title %}
+
+{% block content %}
+
+	<div class="row">
+		{% for topic in topics %}
+			<div class="col-md-4">
+				<a href="{% url 'survey:answer' category.id topic.id %}" class="btn btn-info" role="button">{{ topic }}</a>
+				<br />
+				<br />
+			</div>
+		{% endfor %}
+	</div>
+
+	<a href="{% url 'survey:add_topic' category.id %}" class="btn btn-success" role="button">Add New Topic</a>
+
+{% endblock content%}

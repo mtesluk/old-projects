@@ -1,0 +1,24 @@
+<div class="mt-5">
+  <div class="row">
+    <mat-form-field class="col-2">
+      <mat-select placeholder="City" (selectionChange)="setCurrentCity($event)" [(value)]="current_city">
+        <mat-option *ngFor="let city of (cities | async)" [value]="city.name">
+            {{ city.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <ul class="nav justify-content-center bg-dark col-10">
+      <li class="nav-item mr-1" *ngFor="let day of days;">
+        <app-date-field [date]="day" (click)="choose_date(day)"></app-date-field>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="mt-5">
+    <li class="list-group-item mb-3 rounded" *ngFor="let movie of (current_movies | async);">
+      <app-movie [date]="current_day" [movie]="movie"></app-movie>
+    </li>
+  </ul>  
+
+</div>

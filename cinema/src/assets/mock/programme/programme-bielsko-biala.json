@@ -1,0 +1,123 @@
+[
+    {
+        "en_movie_name": "Sherlock Holmes",
+        "original_movie_name": "Sherlock Holmes",
+        "times": 
+        [
+            {
+                "time": "11:00", 
+                "full": false
+            },
+            {
+                "time": "13:50", 
+                "full": false
+            },
+            {
+                "time": "15:00", 
+                "full": false
+            },
+            {
+                "time": "16:30", 
+                "full": false
+            },
+            {
+                "time": "18:20", 
+                "full": false
+            },
+            {
+                "time": "20:21",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "Fantastic Beasts: The Crimes of Grindelwald",
+        "original_movie_name": "Fantastic Beasts: The Crimes of Grindelwald",
+        "times": 
+        [
+            {
+                "time": "13:50", 
+                "full": false
+            },
+            {
+                "time": "15:00", 
+                "full": false
+            },
+            {
+                "time": "19:43",
+                "full": false
+            },
+            {
+                "time": "12:00",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "Priceless",
+        "original_movie_name": "Hors de prix",
+        "times": 
+        [
+            {
+                "time": "11:00",
+                "full": false
+            },
+            {
+                "time": "19:40",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "Harry Potter",
+        "original_movie_name": "Harry Potter",
+        "times": 
+        [
+            {
+                "time": "10:00",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "The Lord of the Rings",
+        "original_movie_name": "The Lord of the Rings",
+        "times": 
+        [
+            {
+                "time": "12:50",
+                "full": false
+            },
+            {
+                "time": "19:25",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "Gods",
+        "original_movie_name": "Bogowie",
+        "times": 
+        [
+            {
+                "time": "19:43",
+                "full": false
+            }
+        ]
+    },
+    {
+        "en_movie_name": "Leonardo da Vinci",
+        "original_movie_name": "Leonardo da Vinci",
+        "times": 
+        [
+            {
+                "time": "9:00",
+                "full": false
+            },
+            {
+                "time": "21:00",
+                "full": false
+            }
+        ]
+    }
+]

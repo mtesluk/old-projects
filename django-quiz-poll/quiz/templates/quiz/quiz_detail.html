@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load quiz_tags %}
+
+{% block title %}
+{{ topic }}
+{% endblock title %}
+
+{% block content %}
+
+	{% for question in topic.questions.all %}
+		{{ question }}
+		<br />
+		<ul>
+			{% for answer in question.answers.all %}
+				<li>
+					{{ answer }} &nbsp;&nbsp; {{ answer.is_good }} &nbsp;&nbsp;
+					{% with answer.picked as num %}
+						{% with question.amount as nums %}
+							that answer was picked {{ num|calc_percent:nums }}% times
+						{% endwith %}
+					{% endwith %}
+					<br />
+				</li>
+			{% endfor %}
+			<br />
+		</ul>
+	{% endfor %}
+
+{% endblock content %}

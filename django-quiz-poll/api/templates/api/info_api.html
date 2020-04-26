@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Api
+{% endblock title %}
+
+{% block content %}
+
+	<h3>This page show endpoints to download data</h3>
+	<h5>First what you need is possession of account.</h5>
+	<h5>If you don't have, register <a href="{% url 'account:register' %}">here</a>.</h5>
+
+
+	<p>Every link after your domain url starts with:</p>
+	<div class="alert alert-success">
+		/api/v1
+	</div>
+	<p>Next you have to add next part which interest you</p>
+	<p>For example:</p>
+	<div class="alert alert-success">
+		http://127.0.0.1:8000/api/v1/quiz/
+	</div>
+
+	<br />
+	<br />
+	<div class="alert alert-success">
+		POST /quiz
+	</div>
+	<div class="alert alert-success">
+		POST /survey
+	</div>
+	<p>
+		With these links you can create questions to survey and 
+		questions with answers to quiz.
+		Here are examples of json which can be send by endpoints:
+		<a href="#">quiz</a> and <a href="#">survey</a>.
+	</p>
+
+{% endblock content%}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Your account
+{% endblock title %}
+
+{% block content %}
+
+	<a href="#" class="btn btn-primary" role="button">Settings</a>
+	<br />
+	<br />
+	<a href="{% url 'account:password_change' %}" class="btn btn-primary" role="button">Change Password</a>
+	<br />
+	<br />
+	<a href="{% url 'survey:user_survey' %}" class="btn btn-primary" role="button">Your survey</a>
+	<br />
+	<br />
+	<a href="{% url 'quiz:user_quizes' %}" class="btn btn-primary" role="button">Your quizes</a>
+
+
+{% endblock content%}

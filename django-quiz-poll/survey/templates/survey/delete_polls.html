@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Delete survey
+{% endblock title %}
+
+{% block content %}
+
+	{% for survey in survey %}
+		<a href="{% url 'survey:survey_detail' survey.id %}" class="btn btn-primary" role="button">{{ survey }}</a>
+		<br />
+		<br />
+	{% endfor %}
+	
+
+{% endblock content%}

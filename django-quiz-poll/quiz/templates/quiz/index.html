@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'quiz/style.css' %}" />
+
+  </head>
+  <body>
+    <div id="header">
+      Database of quiz
+    </div>
+    <div id="container">
+    {% if bases %}
+    {% for base in bases %}
+      <div class="base"><a href="{{ base.get_absolute_url }}"><form class="basename">{{ base.name }}</form></a></div>
+    {% endfor %}
+    {% else %}
+    Brak quizow
+    {% endif %}
+    </div> 
+
+  </body>
+</html>

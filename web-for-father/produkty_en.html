@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <title>Gibonus</title>
+  <meta name="description" content="Gibonus - workshop of musical instruments"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="name">
+      <h1 style="flaot: left">Gibonus - Workshop of Musical Instruments</h1>
+    </div>
+
+    <div class="menu">
+      <ol>
+		<li><a href="index_en.html">Main page</a></li>
+        <li><a href="produkty_en.html">Pan Flute</a>
+			<ul>
+				<li><a href="fp-student-en.html">Student</a></li>
+				<li><a href="fp-concert-en.html">Concert</a></li>
+				<li><a href="fp-solist-en.html">Solist</a></li>
+				<li><a href="fp-master-en.html">Master</a></li>
+			</ul>
+		</li>
+        <li><a href="sprzedaz_en.html">Sale</a></li>
+        <li><a href="wspolpraca_en.html">Cooperation</a></li>
+        <li><a href="kontakt_en.html">Contact</a></li>
+      </ol>
+    </div>
+
+    <div id="container">
+      <div id="left">
+		<div class="language">
+			<a href="produkty_pl.html"><image src="images/polska.gif" width="50" height="30"></image></a>
+			<a href="produkty_en.html"><image src="images/anglia.jpg" width="50" height="30"></image></a>
+		</div>
+		<a href="http://www.panflute.pl/" target="_blank">
+			<image src="images/shop.jpg" height="500" width="140" />
+		</a>
+      </div>
+      
+      <div id="main">
+		<h1><center>Pan Flutes - Panpipes</center></h1>
+		<br />
+		<br />
+		The Pan flute is the specialty of our workshop. It's the world's oldest wind instrument 
+		from which other wind instruments or keyboard instruments (organs) are derived.
+		The instrument was known almost on all the continents. 
+		The most popular name of the instrument "Pan flute" comes from the name of 
+		the Greek god Pan who was the mythical pre-creator of the instrument.
+		<br />
+		<br />
+		<center><image src="images/panpipes_gibonus.gif" height="300" width="400" /></center>
+		<br />
+		Gibonus Panpipes are currently made mainly from maple wood from the Polish Beskid Makowski mountains, 
+		while the Maestro group of instruments is made from cherry, plum and pear wood. Formerly the instruments were made 
+		from different varieties of bamboo. It is not, however, the best choice for good instruments that require perfect 
+		geometrical design. Bamboo is not cylindrical and its tube dimensions are variable which means that it is not possible 
+		to get a full, deep sound. Apart from that bamboo is not a durable material, it often cracks and some tubes may even stop producing sounds.
+		<br />
+		<br />
+		<center><image src="images/sopr-case-kurz.jpg" height="300" width="400" /></center>
+		<br />
+		Our flutes are divided into two groups:
+		<br />
+		Student - amateur instruments manufactured in production series and <br />
+		Professional - single instruments made to order personally by Marek Teśluk for professional musicians.
+		<br />
+		<br />
+		We hope that today, when the Pan flute is being born again, you will find in our instrument the beauty of its raw, dull and windy sounds.
+		<br />
+		<br />
+
+
+      </div>
+
+      <div id="right">
+	<div id="fb"><a href="https://www.facebook.com/marek.tesluk?fref=ts" class="socialclass" target="_blank"><i class="icon-facebook-squared"></i></a></div>
+	<div id="yt"><a href="https://www.youtube.com/user/panfun11" class="socialclass" target="_blank"><i class="icon-youtube-squared"></i></a></div>
+      </div>
+      <div style:"clear: both"></div>
+    </div>
+     
+	<div id="serwis">
+		<a href="http://www.fletnia-pana.pl/" target="_blank"><image src="images/baner1.gif" width="400" height="50"></image></a>
+	</div>
+	
+    <div id="footer">gibonus.com &copy; 2017 All Right Reserved 
+    </div>
+  </div>
+
+<script src="jquery-3.2.1.min.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+	stickyNav();
+	});
+	});
+
+</script>
+
+  
+</body>
+</html>

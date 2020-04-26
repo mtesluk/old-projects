@@ -1,0 +1,20 @@
+{
+    "small": 
+    {
+        "popcorn": 12,
+        "nachos": 13,
+        "pepsi": 10
+    },
+    "medium": 
+    {
+        "popcorn": 14,
+        "nachos": 15,
+        "pepsi": 11
+    },
+    "large": 
+    {
+        "popcorn": 16,
+        "nachos": 17,
+        "pepsi": 12
+    }
+}

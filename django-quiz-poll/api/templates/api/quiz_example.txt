@@ -1,0 +1,80 @@
+full_quiz_dict = {
+    "name": "Study",
+    "topics":
+        [
+            {
+                "topic_name": "C++",
+                "questions":
+                [
+                    {
+                        "question_name": "What is good syntax?",
+                        "answers":
+                        [
+                            {
+                                "answer": "var name = 'name';",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "int name = 'name';",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "string name = 'name';",
+                                "is_good": True
+                            },
+                            {
+                                "answer": "name = 'name'",
+                                "is_good": False
+                            }
+                        ]
+                    },
+                    {
+                        "question_name": "What it do? 'i++;'",
+                        "answers":
+                        [
+                            {
+                                "answer": "Increase variable i",
+                                "is_good": True
+                            },
+                            {
+                                "answer": "Decrease variable i",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "Double variable i",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "Erase variable i",
+                                "is_good": False
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "topic_name": "Python",
+                "questions":
+                [
+                    {
+                        "question_name": "Is it fast?",
+                        "answers":
+                        [
+                            {
+                                "answer": "Yes",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "It depends...",
+                                "is_good": False
+                            },
+                            {
+                                "answer": "No",
+                                "is_good": True
+                            }
+                        ]
+                    }
+                ]
+            }
+    ]
+}
